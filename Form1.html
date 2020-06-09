@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/formcss.css">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+  <header>
+        <div>
+            <h1 style="font-size:2.2vw;">Magic Sports</h1>
+        </div>
+        <nav>   
+            <ul style="font-size:1.8vw;">
+                <li><a href="Main.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="Beta.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <h2 align="center" class="t" style="font-size:2vw;">Ficha de Registro</h2>
+
+  <div class="container">
+    <form  id="form_registro"action="RegistroU.php" method="post">
+      
+    <div class="row">
+      <div class="col-25">
+        <label for="lname" style="font-size:1.6vw;">Nombre(s):</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nombre" name="firstname" placeholder="Nombre..." style="font-size:1.8vw;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname" style="font-size:1.6vw;">Apellidos:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="apellidos" name="lastname" placeholder="Apellidos..." style="font-size:1.8vw;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="name" style="font-size:1.6vw;">Fechad de nacimiento:</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="fecha" name="bday" style="font-size:1.8vw;">
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="subject" style="font-size:1.6vw;">Nombre de usuario</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="ID" name="ID" placeholder="ID..." style="font-size:1.8vw;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject" style="font-size:1.6vw;">Contrase&ntilde;a:</label>
+    </div>
+    <div class="col-75">
+      <input type="password" id="password" name="password" placeholder="Contrase&ntilde;a..." style="font-size:1.8vw;">
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname" style="font-size:1.6vw;">Ciudad natal:</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country" style="font-size:1.6vw;">
+        <option value="Aguascalientes">Aguascalientes</option>
+        <option value="Baja_California">Baja California</option>
+        <option value="Baja_California_Sur">Baja California Sur</option>
+        <option value="Campeche">Campeche</option>
+        <option value="Chiapas">Chiapas</option>
+        <option value="Chihuahua">Chihuahua</option>
+        <option value="Ciudad_de_México">Ciudad de M&eacute;xico</option>
+        <option value="Coahuila">Coahuila</option>
+        <option value="Colima">Colima</option>
+        <option value="Durango">Durango</option>
+        <option value="Guanajuato">Guanajuato</option>
+        <option value="Guerrero">Guerrero</option>
+        <option value="Hidalgo">Hidalgo</option>
+        <option value="Jalisco">Jalisco</option>
+        <option value="México">M&eacute;xico</option>
+        <option value="Michoacán">Michoac&aacute;n</option>
+        <option value="Morelos">Morelos</option>
+        <option value="Nayarit">Nayarit</option>
+        <option value="Nuevo_Leon">Nuevo Le&oacute;n</option>
+        <option value="Oaxaca">Oaxaca</option>
+        <option value="Puebla">Puebla</option>
+        <option value="Queretaro">Quer&eacute;taro</option>
+        <option value="Quintana_Roo">Quintana Roo</option>
+        <option value="San_Luis_Potosi">San Luis Potos&iacute;</option>
+        <option value="Sinaloa">Sinaloa</option>
+        <option value="Sonora">Sonora</option>
+        <option value="Tabasco">Tabasco</option>
+        <option value="Tamaulipas">Tamaulipas</option>
+        <option value="Tlaxcala">Tlaxcala</option>
+        <option value="Veracruz">Veracruz</option>
+        <option value="Yucatán">Yucat&aacute;n</option>
+        <option value="Zacatecas">Zacatecas</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject" style="font-size:1.6vw;">Calle y n&uacute;mero:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio..." style="font-size:1.8vw;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject" style="font-size:1.6vw;">C.P:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="cp" name="cp" placeholder="Codigo Postal..." style="font-size:1.8vw;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname" style="font-size:1.6vw;">Numero telefonico:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="telefono" name="telefono" placeholder="55-00-00-00-00" style="font-size:1.8vw;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname" style="font-size:1.6vw;">E-mail:</label>
+    </div>
+    <div class="col-75">
+      <input type="email" name="emailaddress" placeholder="ejemplo@gmail.com"  style="font-size:1.8vw;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname" style="font-size:1.6vw;">Ocupacion</label>
+    </div>
+    <div class="col-75">
+         <input type="radio" name="jugador" id="jugador"><label  class="rad" for="jugador" style="font-size:1.6vw;">Jugador</label><br>
+      <input type="radio" name="arbitro" id="arbitro"><label class="rad" for="arbitro" style="font-size:1.6vw;">Arbitro</label><br>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit" style="font-size:1.6vw;">
+    <input type="reset" value="Borrar los datos" style="font-size:1.6vw;">
+  </div>
+  </form>
+</div>
+
+<footer style="font-size:1.8vw;">
+        <p>Magic Sports</p>
+        <p id="demo"></p>
+        <p>EQUIPO:</p>
+        <p>Pedraza Cordero Bryan Eduardo - Robles Sosa Paula - Rosales Iba&ntilde;ez Ricardo Uziel - Rosas Sanchez Paloma</p>
+        <p>ricky_uri@hotmail.com</p>
+    </footer>
+    <script>
+var d = new Date();
+var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Augosto","Septimbre","Octubre","Noviembre","Diciembre"];
+document.getElementById("demo").innerHTML = d.getDate()+'-'+months[d.getMonth()]+'-'+d.getFullYear();
+</script>
+</body>
+
+</html>

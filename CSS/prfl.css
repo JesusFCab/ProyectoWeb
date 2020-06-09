@@ -1,0 +1,447 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*NEW CCS STYLE*/
+
+#sec {
+    position: center;
+    padding-top: 10%;
+    margin: 0 auto;
+    padding-left: 5%;
+}
+
+.about {
+    width: 30%;
+    background: rgba(0, 250, 176, 0.4);
+    overflow: hidden;
+    float: left;
+    max-height: 800px;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -khtml-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+}
+
+#sec h2 {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.125em;
+    color: rgba(0, 0, 0, 1)
+}
+
+#sec h3 {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 0.015em;
+    font-size: 1.4em;
+}
+
+#sec p {
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 0.010em;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.about:hover {
+    max-height: 1000px;
+    padding: 15px;
+    background: rgba(0, 0, 51, .7);
+    width: 31%;
+}
+
+.about h3{
+    display: block;
+    color: black;
+    text-decoration: none;
+    animation: ease-in 0s 2s;
+}
+
+.about:hover p,
+.about:hover h3 {
+    color: white;
+}
+
+.cf {
+    clear: both;
+    position: relative;
+    display: block;
+}
+
+
+/* -------------------------END------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*h2{
+  text-align: center;
+  border: 2px solid #3CBC8D;
+  color: #4CAF50;
+}*/
+
+
+/* --------------------------------Fondo------------------------- */
+
+.container {
+    border-radius: 5px;
+    background-image: url(../img/bg.png);
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* -----------------------------Letra----------------------------- */
+
+label {
+    color: #4caf50;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=type],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=time],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked +.rad {
+    padding: 5px 15px;
+    background: #16aa56;
+    border-radius: 2px;
+    color: white;
+}
+
+input[type=radio]:checked +.rad:before {
+    display: none;
+}
+
+.rad {
+    color: #16aa56;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    border-radius: 3px;
+    cursor: pointer;
+    -o-transition: all 0.3s ease;
+    -transition: all 0.3s ease;
+}
+
+.rad:hover {
+    background: rgba(0, 128, 63, 0.3);
+}
+
+.rad:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #16aa56;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+}
+
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3CBC8D;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+input[type=file] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=file]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        margin: 1px;
+    }
+    .col-25,
+    .col-75,
+    input[type=reset] {
+        width: 100%;
+        margin-top: 0;
+        margin: 1px;
+    }
+}
+
+header {
+    white-space: nowrap;
+    position: fixed;
+    display: block;
+    background-color: #000000;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+header div {
+    margin: none;
+}
+
+header nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left;
+    font-family: Comic Sans MS, arial;
+    text-align: center;
+    left: 30%;
+    border-left: #000 solid;
+}
+
+header h1 {
+    font-family: Comic Sans MS, arial;
+}
+
+header nav ul li:first-child {
+    border-left: none;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    animation: ease-in 0s 2s;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(51, 204, 204, 1);
+    text-decoration: none;
+    animation: ease-in 0s 2s;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #FFF;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    height: 8em;
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (min-width:1200px) {
+    header nav ul li {
+        position: relative;
+    }
+    body {
+        padding-top: 8%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    main aside:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    main aside:first-child {
+        display: none;
+    }
+    main article {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    footer {
+        width: 100%;
+    }
+    body header nav {
+        position: absolute;
+    }
+    body header nav ul li {
+        float: none;
+        width: 100%;
+    }
+    header {
+        position: absolute;
+    }
+    header img[src^="img/logo"] {
+        height: 80px;
+        width: auto;
+        margin: auto;
+        margin-top: 65px;
+    }
+}

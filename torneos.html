@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/Main.css">
+
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+  <header>
+        <div>
+            <h1 style="font-size:2.2vw;">Magic Sports</h1>
+        </div>
+        <nav>   
+            <ul style="font-size:1.8vw;">
+                <li><a href="Main.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="Beta.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="container">
+    <div class="stack">
+      <h1>&#161;Por el momento no se esta llevando ningun torneo acabo.&#33;</h1>
+     
+  <footer style="font-size:1.8vw;">
+          <p>Magic Sports</p>
+          <p id="demo"></p>
+          <p>EQUIPO:</p>
+          <p>Pedraza Cordero Bryan Eduardo - Robles Sosa Paula - Rosales Iba&ntilde;ez Ricardo Uziel - Rosas Sanchez Paloma</p>
+          <p>ricky_uri@hotmail.com</p>
+  </footer>
+  <script>
+    var d = new Date();
+    var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Augosto","Septimbre","Octubre","Noviembre","Diciembre"];
+    document.getElementById("demo").innerHTML = d.getDate()+'-'+months[d.getMonth()]+'-'+d.getFullYear();
+  </script>
+</body>
+
+</html>

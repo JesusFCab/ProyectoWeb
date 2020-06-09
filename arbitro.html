@@ -1,0 +1,93 @@
+<!--arbitro-->
+<DOCTYPE>
+
+<html>
+<head>
+	<title>Acta</title>
+
+	<link rel="stylesheet" href="CSS/formcss.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Magic Sports</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Perfil_1.html">Inicio</a></li>
+                <li><a href="Help.html">Ayuda</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="Beta.html">Configuraci&oacute;n</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="ba">
+        <h1 class="t" align="center">Acta Arbitral</h1>
+
+        <label for="lname">Bienvenido:___________________</label>
+
+        <form method="get">
+        	<div class="row">
+                <div class="col-25">
+        			<label for="lname">Tipo de torneo:</label>
+        		</div>
+        		<div class="col-75">
+        			<input type="radio" name="gender" id="aso"><label  class="rad" for="aso">Asociaci&oacute;n</label><br>
+        			<input type="radio" name="gender" id="rapi"><label  class="rad" for="rapi">Rapido</label><br>
+        		</div>
+        	</div>
+        	<div class="row">
+                <div class="col-25">
+                	<label for="lname">Fecha:</label>
+                </div>
+                <div class="col-75">
+                	<input type="date" name="fecha"/>
+                </div>
+            </div>
+        	<div class="row">
+                <div class="col-25">
+                	<label for="lname">Jornada:
+                </label>
+                <div class="col-75">
+                	<input type="number" name="jor"min="1" max="30"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                	<label for="lname">Cancha:</label>
+            	</div>
+            	<div class="col-75">
+        			<input type="radio" name="gender" id="cp1"><label  class="rad" for="cp1">Campo principal 1</label><br>
+        			<input type="radio" name="gender" id="cp2"><label  class="rad" for="cp2">Campo 2</label><br><br>
+        		</div>
+        	</div>
+        	<div class="row">
+                <div class="col-25">
+                	<label for="lname">Hora de inicio del partido</label>
+                </div>
+                <div class="col-75">
+                	<input type="time" name="">
+                </div>
+            </div>
+        	<div class="row">
+                <div class="col-25">
+                	<label for="lname">Hora de finalizaci&oacute;n del partido</label>
+                </div>
+                <div class="col-75">
+                  	<input type="time" name="">
+                </div>
+            </div>
+        	   <label for="lname">Seleccione el club</label>
+        	<table width="100%" border="1">
+        		<tr>
+        			<td><select> <option value="" disabled selected>Seleccionar</option><option>A&L</option><option>cuervoc fc</option></select></td>
+        			<td align="center">vs</td>
+        			<td><select> <option value="" disabled selected>Seleccionar</option><option>A&L</option><option>cuervos fc</option></select></td>
+        		</tr>
+        	</table>
+        </form>
+    </div>
+</body>
+</html>

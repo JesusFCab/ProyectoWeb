@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/formcss.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+  <header>
+        <div>
+            <h1 style="font-size:2.2vw;">Magic Sports</h1>
+        </div>
+        <nav>   
+            <ul style="font-size:1.8vw;">
+                <li><a href="Perfil_1.html">Inicio</a></li>
+                <li><a href="Help.html">Ayuda</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="#">Configuraci&oacute;n</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <h2>Ayuda:</h2>
+
+  <div class="container">
+    <h3>Generar los horarios de juego</h3>
+    Todo juego tiene que tener un horario fijo en caso de que los equipos no puedan dentro del mismo solicitaran el cambio de horario y fecha para no estar moviendo los dem&aacute;s juegos.
+    <h3>Los registros de los equipos a participar</h3>
+    Todos los equipos llevar&oacute;n a cabo el registro de todos sus jugadores que vayan a participar en el torneo as&iacute; evitamos que cuando se premie al equipo campe&oacute;n se otorgue el n&uacute;mero correcto de medallas, el trofeo y no registre adeudos.
+    Control de recursos econ&oacute;micos que se generan 
+    Los costos son un punto importante para considerar,  dentro de ello se contempla registro y cuotas por juego, lo recaudado debe ser lo suficiente para que el administrador pueda efectuar la compra de la premiaci&oacute;n al campe&oacute;n.  
+    <h3>Tablas de posiciones</h3>  
+    Un problema que se identifica son los dos siguientes puntos
+    la tabla de posici&oacute;n no est&aacute; bien estructurada.
+    no contiene los puntos correctos.
+    Para ello la misma p&aacute;gina realizara el ordenamiento de por puntos goles a favor, goles en contra y partidos jugados.
+    <h3>Informes de los partidos y &aacute;rbitro que llevo a cabo el juego</h3>
+    Se pretende que los &aacute;rbitros puedan registrar en una sesi&oacute;n para ellos el informe del partido la cual registrara si hubo tarjetas amarillas o rojas, cuotas cubiertas por parte de los dos equipos, resultado del partido y registro de los autores de los goles.
+    El beneficio que otorga esta aplicación es evitar que los horarios no se repitan,  el control de puntos sea el correcto, desorganizaci&oacute;n en el torneo y no solo eso es tambi&eacute;n ayudando al medio ambiente reduciendo usar hojas de papel que se imprimen y  pegan para brindar la informaci&oacute;n del horario y despu&eacute;s son desechadas.
+  </div>
+
+  <footer style="font-size:1.8vw;">
+          <p>Magic Sports</p>
+          <p id="demo"></p>
+          <p>EQUIPO:</p>
+          <p>Pedraza Cordero Bryan Eduardo - Robles Sosa Paula - Rosales Ibañez Ricardo Uziel - Rosas Sanchez Paloma</p>
+          <p>ricky_uri@hotmail.com</p>
+  </footer>
+  <script>
+    var d = new Date();
+    var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Augosto","Septimbre","Octubre","Noviembre","Diciembre"];
+    document.getElementById("demo").innerHTML = d.getDate()+'-'+months[d.getMonth()]+'-'+d.getFullYear();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* --------------------------------Menu------------------------- */
+header {
+    white-space: nowrap;
+    position: fixed;
+    display: block;
+    background-color: #000000;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+header div {
+    margin: none;
+}
+
+header nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    font-size: 20px;
+	padding-bottom:20px;
+}
+
+header nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left;
+    font-family: Comic Sans MS, arial;
+    text-align: center;
+    left: 30%;
+    border-left: #000 solid;
+}
+header h1{
+    font-family: Comic Sans MS, arial;
+}
+
+header nav ul li:first-child {
+    border-left: none;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+	animation:ease-in 0s 2s;
+}
+
+header nav ul li a:hover {
+    background-color:rgba(51,204,204,1);
+	text-decoration: none;
+	animation:ease-in 0s 2s;
+}
+/* --------------------------------Footer------------------------- */
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #FFF;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    height: 8em;
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* --------------------------------Estilo Login------------------------- */
+main{
+    width: 300px;
+    height: 236px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: -150px;
+    z-index: 99;
+}
+.login {
+    width: 300px;
+    float: right;
+    top: 50%;
+    left: 50%;
+    margin: -184px 0px 0px -155px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(255, 255, 255, 0.07)
+}
+.forgot {
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forgot:hover {
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #6d7781;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 255, 255, 1);
+    outline: none;
+    color: #16aa56;
+    font-size: 25px;
+}
+
+.login h2 {
+    color: white;
+}
+label {
+    display: block;
+    position: absolute;
+    margin-right: 10px;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 3px solid #46485c;
+}
+
+/* --------------------------------Button------------------------- */
+.new_acount{
+    background-color:rgba(0, 250, 176, 0.4);
+    border: 0;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 10%;
+}
+.new_acount:hover{
+    background: #16aa56;
+}
+input[type="submit"] {
+    background-color:rgba(0, 250, 176, 0.4);
+    border: 0;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+    background: #16aa56;
+}
+/* --------------------------------Radio Button------------------------- */
+input[type=checkbox] {
+    display: none;
+}
+#remember:checked ~ label[for=remember] {
+    padding-left: 2px;
+    background: #b5cd60;
+}
+.remember{
+    padding: 30px 10px;
+    text-indent: 20px;
+    line-height: 15px;
+    color: white;
+    text-align: left;
+}
+::-webkit-input-placeholder {
+    color: #46485c;
+}
+[placeholder]{
+    color: rgba(0, 250, 176, 0.4);
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: all 0.2s linear;
+    transform: translate(10px, 0);
+    opacity: 0.2;
+}
+/* --------------------------------Querys------------------------- */
+@media only screen and (min-width:1200px) {
+    header nav ul li {
+        position: relative;
+    }
+    
+}
+
+@media only screen and (max-width:1200px) {
+    main aside:last-child {
+        display: none;
+    }
+    .login {
+    width: 250px;
+    }
+    label{
+        width: 12px;
+        height: 12px;
+    }
+    .new_acount{
+        width: 250px;
+        height: 30px;
+    }
+    input[type="submit"]{
+        width: 250px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .login {
+    width: 200px;
+    }
+    label{
+        width: 10px;
+        height: 10px;
+    }
+    .new_acount{
+        width: 200px;
+        height: 25px;
+    }
+    input[type="submit"]{
+        width: 200px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    footer {
+        width: 100%;
+    }
+    body header nav {
+        position: absolute;
+    }
+    body header nav ul li {
+        float: none;
+        width: 100%;
+    }
+    header {
+        position: absolute;
+    }
+    header nav{
+        padding-bottom:0;
+    }
+    .login {
+    width: 100px;
+    }
+    label{
+        width: 8px;
+        height: 8px;
+    }
+    .new_acount{
+        width: 90px;
+        height: auto;
+    }
+    input[type="submit"]{
+        width: 90px;
+        height: auto;
+    }
+     footer {
+        width: 100%;
+    }
+    body header nav {
+        position: absolute;
+    }
+    body header nav ul li {
+        float: none;
+        width: 100%;
+    }
+    header {
+        position: absolute;
+    }
+    body {
+        padding-top: 15%;
+    }
+    .new_acount{
+    width: 90px;
+    height: 10px;
+    }
+    header nav{
+        padding-bottom:0;
+    }
+    .about:hover {
+    max-height: 200px;
+    padding: 10px;
+    width: 50%
+    }
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=type],
+    select,
+    textarea {
+        width: 100%;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=number],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=time],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=tel],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=date],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 0.5px solid #3CBC8D;
+        border-radius: 4px;
+    }
+
+    input[type=submit] {
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+
+    input[type=reset] {
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+
+    input[type=file] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    input[type=radio] {
+        display: none;
+    }
+
+    input[type=radio]:checked +.rad {
+        padding: 5px 15px;
+    }
+
+    input[type=radio]:checked +.rad:before {
+        display: none;
+    }
+
+    .rad {
+        padding: 1px 20px 4px 49px;
+       
+    }
+    .rad:before {
+        width: 7px;
+        height: 7px;
+    }
+}
